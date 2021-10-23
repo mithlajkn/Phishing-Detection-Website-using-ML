@@ -1,5 +1,6 @@
 # Phishing-Detection-Website
-phishing detection website using mechine learning algorithm
+phishing detection website using mechine learning algorithm.
+
 alogrithms useed : Decision tree
 
 
