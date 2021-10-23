@@ -1,0 +1,25 @@
+{% extends "admin/index.html" %}
+{% block body %}
+<body>
+
+<form id="form1" name="form1" method="post" action="/replypost">
+<table width="200" border="1" class="table table-striped">
+  <tr>
+    <td>complaints</td>
+    <td>{{ data["complaint"] }} <input type="hidden" name="cid" id="complaints" value="{{ data["complaint_id"] }}"></td>
+  </tr>
+  <tr>
+    <td>reply</td>
+      <label for="reply"></label>
+      <td> <textarea name="reply" id="reply" cols="45" rows="5"></textarea></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>
+      <input type="submit" name="send" id="send" value="Submit" class="btn btn-primary" />
+    </td>
+  </tr>
+</table>
+  </form>
+</body>
+{% endblock %}

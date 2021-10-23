@@ -1,0 +1,31 @@
+{% extends "admin/index.html" %}
+{% block body %}
+<body>
+<form id="form1" name="form1" method="post" action="">
+  <table width="262" border="1" class="table table-striped">
+    <tr>
+      <td>sl.no</td>
+      <td>first name</td>
+      <td>last name</td>
+      <td>email </td>
+      <td> Block/unblock</td>
+    </tr>
+      {% for i in data %}
+    <tr>
+      <td>&nbsp;{{ loop.index}}</td>
+      <td>{{ i["first_name"] }}</td>
+      <td>&nbsp;{{ i["last_name"] }}</td>
+      <td>{{ i["email"] }}</td>
+        {% if i["type"]=="block"%}
+      <td><a href="/blockorunblock/{{ i["login_id"] }}/user">unblock</a></td>
+        {% elif i["type"]=="user" %}
+         <td><a href="/blockorunblock/{{ i["login_id"] }}/block">block</a></td>
+        {% endif %}
+    </tr>
+      {% endfor %}
+  </table>
+</form>
+
+
+</body>
+{% endblock %}

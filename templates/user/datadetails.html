@@ -1,0 +1,77 @@
+{% extends "user/index.html" %}
+{% block body %}
+
+<table width="400" border="3">
+  <tbody>
+    <tr>
+      <th>Feature 1</th>
+      <th>Feature 2</th>
+      <th>Feature 3</th>
+      <th>Feature 4</th>
+      <th>Feature 5</th>
+      <th>Feature 6</th>
+      <th>Feature 7</th>
+      <th>Feature 8</th>
+      <th>Feature 9</th>
+      <th>&nbsp;Feature 10</th>
+      <th>&nbsp;Feature 11</th>
+      <th>&nbsp;Feature 12</th>
+      <th>&nbsp;Feature 13</th>
+      <th>&nbsp;Feature 14</th>
+      <th>&nbsp;Feature 15</th>
+      <th>&nbsp;Feature 16</th>
+      <th>&nbsp;Feature 17</th>
+      <th>&nbsp;Feature 18</th>
+      <th>Feature 19</th>
+      <th>Feature 20</th>
+      <th>Feature 21</th>
+      <th>Feature 22</th>
+      <th>Feature 23</th>
+      <th>Feature 24</th>
+      <th>Feature 25</th>
+      <th>&nbsp;Feature 26</th>
+      <th>&nbsp;Feature 27</th>
+      <th>&nbsp;Feature 28</th>
+      <th>&nbsp;Feature 29</th>
+      <th>&nbsp;Feature 30</th>
+      <th>Label</th>
+    </tr>
+    {% for i in data %}
+    <tr>
+      <td>&nbsp;{{ i[0] }}</td>
+      <td>&nbsp;{{ i[1] }}</td>
+      <td>{{ i[0] }}</td>
+      <td>&nbsp;{{ i[1] }}</td>
+      <td>&nbsp;{{ i[0] }}</td>
+      <td>{{ i[1] }}</td>
+      <td>&nbsp;{{ i[0] }}</td>
+      <td>&nbsp;{{ i[1] }}</td>
+      <td>&nbsp;{{ i[0] }}</td>
+      <td>&nbsp;{{ i[1] }}</td>
+      <td>&nbsp;{{ i[0] }}</td>
+      <td>&nbsp;{{ i[1] }}</td>
+      <td>&nbsp;{{ i[0] }}</td>
+      <td>&nbsp;{{ i[1] }}</td>
+      <td>&nbsp;{{ i[0] }}</td>
+      <td>&nbsp;{{ i[1] }}</td>
+      <td>&nbsp;{{ i[0] }}</td>
+      <td>&nbsp;{{ i[1] }}</td>
+      <td>&nbsp;{{ i[0] }}</td>
+      <td>&nbsp;{{ i[1] }}</td>
+      <td>&nbsp;{{ i[0] }}</td>
+      <td>&nbsp;{{ i[1] }}</td>
+      <td>&nbsp;{{ i[0] }}</td>
+      <td>&nbsp;{{ i[1] }}</td>
+      <td>&nbsp;{{ i[0] }}</td>
+      <td>&nbsp;{{ i[1] }}</td>
+      <td>&nbsp;{{ i[0] }}</td>
+      <td>{{ i[1] }}&nbsp;</td>
+      <td>&nbsp;{{ i[0] }}</td>
+      <td>{{ i[1] }}&nbsp;</td>
+      <td>&nbsp;{{ i[0] }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</body>
+{% endblock %}

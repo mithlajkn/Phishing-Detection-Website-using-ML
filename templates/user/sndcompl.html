@@ -1,0 +1,19 @@
+{% extends "user/index.html" %}
+{% block body %}
+
+<body>
+<form id="form1" name="form1" method="post" action="/snd">
+  <table width="180" border="1" class="table table-striped">
+    <tr>
+      <td>complaints</td>
+      <td><label for="complaints2"></label>
+      <textarea name="sndcomplaints" id="complaints2" cols="100" rows="5"></textarea></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><input type="submit" name="submit" id="submit" value="Submit" class="btn btn-primary" /></td>
+    </tr>
+  </table>
+</form>
+</body>
+{% endblock %}

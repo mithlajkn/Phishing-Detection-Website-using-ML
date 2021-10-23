@@ -1,0 +1,23 @@
+{% extends "user/index.html" %}
+{% block body %}
+<body>
+<form id="form1" name="form1" method="post" action="">
+  <table width="200" border="1" class="table table-striped">
+    <tr>
+      <td>sl.no</td>
+      <td>complaint</td>
+      <td>reply</td>
+      <td>date</td>
+    </tr>
+      {% for i in que %}
+    <tr>
+      <td>&nbsp;{{ loop.index }}</td>
+      <td>{{ i["complaint"] }}</td>
+      <td>{{ i["reply"] }}</td>
+      <td>{{ i["date"]}}</td>
+    </tr>
+      {% endfor %}
+  </table>
+</form>
+</body>
+{% endblock %}
