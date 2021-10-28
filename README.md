@@ -1,7 +1,6 @@
 # Phishing-Detection-Website
-phishing detection website using mechine learning algorithm.
+Phishing detection using machine learning
 
-alogrithms used : Decision tree
-
+alogrithms used:random forset and decision tree
 
 Develped by Mithlaj aand Sidharth
